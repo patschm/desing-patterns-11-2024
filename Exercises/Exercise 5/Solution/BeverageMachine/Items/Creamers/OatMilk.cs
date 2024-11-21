@@ -2,7 +2,7 @@
 
 public class OatMilk : Creamer
 {
-    public OatMilk(Beverage beverage) : base(beverage)
+    public OatMilk(Beverage? beverage = default) : base(beverage)
     {
     }
     public override float? Price => .5F + _beverage?.Price;

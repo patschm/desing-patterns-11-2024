@@ -11,11 +11,11 @@ internal class Person
         // Version 1: Initial version
         //Console.WriteLine($"Hello, I'm {FirstName} {LastName}");
 
-        // Version 2: Modified to accomomdate the age
+        // Version 2: Modified to accomomdate the jobtitle
         Console.WriteLine($"Hello, I'm {FirstName} {LastName} ({JobTitle})");
     }
 
     // Version 2: Added later
-    public string JobTitle { get; set; }
+    public string? JobTitle { get; set; }
     
 }

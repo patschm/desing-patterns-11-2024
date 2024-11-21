@@ -4,11 +4,11 @@ namespace DecoratorNS;
 
 internal class TwitterDecorator : Decorator
 {
-    private readonly Message _wrapper;
+    //private readonly Message _wrapper;
 
-    public TwitterDecorator(Message wrapper)
+    public TwitterDecorator(Message wrapper):base(wrapper)
     {
-        _wrapper = wrapper;
+        //_wrapper = wrapper;
     }
 
     public override void Send(string text)

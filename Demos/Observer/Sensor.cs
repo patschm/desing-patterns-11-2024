@@ -3,6 +3,7 @@
     internal class Sensor
     {
         private List<Observer> _observers=new List<Observer>();
+        public event Action<string> OnChange;
 
         public void Register(Observer observer)
         {
@@ -14,6 +15,7 @@
             {
                 observer.Notify(what);
             }
+            OnChange?.Invoke(what);
         }
     }
 }

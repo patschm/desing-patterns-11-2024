@@ -11,7 +11,7 @@ internal class Program
             vm.DoSomeWork();
             Console.WriteLine("Press enter to do some work");
             Console.ReadLine();
-            if (i % 2 == 0) 
+            if (i % 2 == 1) 
                 hyper.CreateSnapShot();
         }
         hyper.ShowSnapShots();

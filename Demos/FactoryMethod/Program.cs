@@ -8,8 +8,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        var overviewFactory = new OverviewModelFactory();
-        var detailFactory = new DetailModelFactory();
+        ModelFactory overviewFactory = new OverviewModelFactory();
+        ModelFactory detailFactory = new DetailModelFactory();
 
         var model1 = overviewFactory.Create() as OverviewModel;
         var model2 = detailFactory.Create() as DetailModel;

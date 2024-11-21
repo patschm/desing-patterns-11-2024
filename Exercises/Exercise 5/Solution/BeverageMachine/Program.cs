@@ -18,5 +18,10 @@ internal class Program
         Console.WriteLine(t4.Price);
         t4.Brew();
 
+        var om = new OatMilk();
+        var ht = new HotTea(om);
+        Console.WriteLine(ht.Price);
+        ht.Brew();
+
     }
 }

@@ -8,6 +8,10 @@ internal class Program
         sensor.Register(new Siren());
         sensor.Register(new FlashigLight());
 
+        var light = new FlashigLight();
+        sensor.OnChange += light.Notify;
+        
+
         sensor.Detect("Cat");
         sensor.Detect("Dove");
     }

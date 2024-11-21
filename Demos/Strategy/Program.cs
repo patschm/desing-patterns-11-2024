@@ -12,8 +12,8 @@ internal class Program
         }
 
         ShowCollection(collection);
-        //collection.Sort(new BubbleSort());
-        collection.Sort(new QuickSort());
+        collection.Sort(new BubbleSort());
+        //collection.Sort(new QuickSort());
         ShowCollection(collection);
     }
 

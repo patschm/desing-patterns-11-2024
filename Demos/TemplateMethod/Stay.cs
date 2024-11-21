@@ -13,8 +13,7 @@ internal abstract class Stay
         }
         else
         {
-            RejectMessage(animal);
-            
+            RejectMessage(animal);           
         }
     }
 

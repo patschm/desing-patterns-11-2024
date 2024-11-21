@@ -14,7 +14,7 @@ internal class Person
 
 internal class Employee : Person
 {
-    public string JobTitle { get; set; }
+    public string? JobTitle { get; set; }
     public override void Introduce()
     {
         Console.WriteLine($"Hello, I'm {FirstName} {LastName} ({JobTitle})");

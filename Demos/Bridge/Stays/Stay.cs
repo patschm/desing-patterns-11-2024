@@ -24,7 +24,7 @@ public abstract class Stay
     {
         foreach(Animal d in _animals)
         {
-            d.MakeNoise(); ;
+            d.MakeNoise();
         }
     }
 }

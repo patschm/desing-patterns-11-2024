@@ -79,9 +79,12 @@ public class SpecialCollection<T> : ICollection<T>
             array[i] = _items[j++];
         }
     }
+    
+    
     public IEnumerator<T> GetEnumerator()
     {
-        return _items.AsEnumerable<T>().GetEnumerator();
+        return new SpecialCollectionIterator<T>(this);
+        //return _items.AsEnumerable<T>().GetEnumerator();
     }
     public bool Remove(T? item)
     {

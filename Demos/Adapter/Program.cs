@@ -8,7 +8,7 @@ internal class Program
         var phone2 = new Android();
 
         Recharge(phone2 );
-        // Recharge(phone1); // Doesn't work
+        //Recharge(phone1); // Doesn't work
         var adapter= new LightningToMicroUSBAdapter(phone1);
         Recharge(adapter );
     }

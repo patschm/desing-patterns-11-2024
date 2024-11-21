@@ -1,5 +1,4 @@
 ﻿using Media;
-using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleMedia;
 
@@ -10,6 +9,9 @@ internal class Program
         var media = new MediaFacade("Patrick", "1234-5678-9123-4567");
         media.SourceSelector<MoviePlayer>();    
         media.Play("Lord of the Rings");
+        media.SourceSelector<PodcastPlayer>();
+        media.Play("Joe Rogan");
+        media.VolumeUp();
     }
 }
 

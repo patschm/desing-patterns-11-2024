@@ -6,7 +6,7 @@ internal class Program
     {
         // Every sub/child class should be substitutable for their base/parent class.
         Incorrect();
-        Correct();
+        //Correct();
     }
 
     private static void Incorrect()
@@ -14,9 +14,10 @@ internal class Program
         Incorrect.Shape[] shapes = [
             new Incorrect.Circle { Radius = 50},
             new Incorrect.Rectangle { Height = 100, Width=200},
-            new Incorrect.NoShape()
+            new Incorrect.NoShape(),
+            new Incorrect.Square()
             ];
-
+       
         var totalArea = 0D;
         foreach (var shape in shapes)
         {

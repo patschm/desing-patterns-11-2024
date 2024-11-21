@@ -14,8 +14,8 @@ internal class Program
         a2.Next(a3);
         a3.Next(a4);
 
-        var purcahes = CreatePurchases(100);
-        foreach (var purchase in purcahes)
+        var purchases = CreatePurchases(100);
+        foreach (var purchase in purchases)
         {
             chain.Approve(purchase);
             Console.WriteLine("=============================================================");
